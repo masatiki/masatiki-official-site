@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Mark'n Memo icon</title>
+  <desc id="desc">A teal memo icon with a voice wave mark.</desc>
+  <rect width="128" height="128" rx="30" fill="#e3f6f3"/>
+  <rect x="31" y="24" width="66" height="80" rx="14" fill="#ffffff" stroke="#0f8f83" stroke-width="6"/>
+  <path d="M45 48h38M45 63h38M45 78h24" stroke="#0b5f58" stroke-width="7" stroke-linecap="round"/>
+  <path d="M89 50c8 8 8 22 0 30M99 40c15 17 15 39 0 56" fill="none" stroke="#0f8f83" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="31" cy="31" r="8" fill="#0f8f83"/>
+</svg>

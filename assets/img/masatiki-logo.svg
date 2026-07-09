@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Masatiki logo</title>
+  <desc id="desc">A simple teal Masatiki monogram.</desc>
+  <rect width="96" height="96" rx="24" fill="#0f8f83"/>
+  <path d="M24 68V28h10l14 21 14-21h10v40H61V47L51 62h-6L35 47v21H24z" fill="#ffffff"/>
+  <circle cx="72" cy="24" r="7" fill="#b9f2ea"/>
+</svg>

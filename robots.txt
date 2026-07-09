@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://masatiki0217-max.github.io/masatiki-official-site/sitemap.xml
