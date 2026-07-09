@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Masatikiのプライバシーポリシーです。">
+  <meta name="description" content="Mark'n Memoのプライバシーポリシーです。Firebase Analytics、音声入力、通知、アラーム、端末内保存について説明します。">
   <title>Privacy Policy | Masatiki</title>
   <link rel="icon" href="assets/img/masatiki-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -26,27 +26,148 @@
     <article class="document">
       <p class="eyebrow">Policy</p>
       <h1>プライバシーポリシー</h1>
-      <p class="updated">最終更新日：2026年7月9日</p>
+      <p class="updated">最終更新日: 2026年7月9日</p>
 
       <section>
         <h2>1. はじめに</h2>
         <p>
-          Masatikiは、提供するアプリおよびサービスにおけるユーザー情報の取り扱いを大切にします。
-          このページの本文は、アプリ公開前に正式な内容へ差し替えてください。
+          Masatikiは、メモアプリ「Mark'n Memo」を提供しています。
+          Mark'n Memoは、手入力、音声入力、カテゴリ、通知・アラームによるリマインダーを使って、テキストメモを作成・管理するためのアプリです。
+        </p>
+        <p>
+          このページでは、Mark'n Memoが取り扱う情報、端末内に保存する情報、Firebase Analytics / Google Analytics for Firebaseへ送信される可能性がある情報について説明します。
         </p>
       </section>
 
       <section>
-        <h2>2. 取得する情報</h2>
+        <h2>2. 端末内に保存する情報</h2>
         <p>
-          ここに、アプリが取得する情報、利用目的、第三者提供の有無などを記載します。
+          Mark'n Memoは、アプリの機能を提供するため、次の情報をユーザーの端末内に保存します。
+        </p>
+        <ul>
+          <li>ユーザーが作成したメモ本文</li>
+          <li>ユーザーが作成したカテゴリ名</li>
+          <li>メモの並び順、カテゴリの並び順</li>
+          <li>アプリ内で使用する削除済みメモの状態</li>
+          <li>ユーザーが設定したアラーム・リマインダー設定</li>
+          <li>言語、テーマ、UIモード、背景色、音声入力時間などのアプリ設定</li>
+        </ul>
+        <p>
+          これらの情報は、メモ、カテゴリ、設定、通知・アラーム機能を動作させるために使用されます。
+          現在の実装では、メモ本文、カテゴリ名、アラーム内容をMasatikiが管理するサーバーへ送信する機能はありません。
         </p>
       </section>
 
       <section>
-        <h2>3. お問い合わせ</h2>
+        <h2>3. 音声入力について</h2>
         <p>
-          プライバシーポリシーに関するお問い合わせ先は、正式な連絡先を設定後に記載します。
+          Mark'n Memoは、ユーザーが音声入力を開始した場合に限り、マイクを使用します。
+          音声入力は、端末で利用可能なAndroidの音声認識サービスを通じて、話した内容をテキスト化するために使用されます。
+        </p>
+        <p>
+          Mark'n Memo自体は、音声を録音ファイルとして保存しません。
+          音声認識の対応言語、認識精度、処理方法は、ユーザーの端末、Androidバージョン、インストールされている音声認識サービス、言語設定によって異なる場合があります。
+        </p>
+      </section>
+
+      <section>
+        <h2>4. 通知・アラームについて</h2>
+        <p>
+          Mark'n Memoは、ユーザーが設定したメモのリマインダーのために、端末内で通知やアラームを使用します。
+          通知には、端末やロック画面の設定によって、メモ本文が表示される場合があります。
+        </p>
+        <p>
+          これらの通知・アラームは、ユーザーが作成したリマインダーを知らせるために使用されます。
+          広告やマーケティング目的の通知には使用しません。
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Firebase Analyticsについて</h2>
+        <p>
+          Mark'n Memoは、アプリの利用状況を把握し、品質改善に役立てるためにFirebase Analytics / Google Analytics for Firebaseを使用します。
+        </p>
+        <p>
+          現在の実装では、主に次のような操作イベントを記録します。
+        </p>
+        <ul>
+          <li>アプリ画面の表示、セッション開始</li>
+          <li>手入力によるメモ作成</li>
+          <li>音声入力の開始、音声入力からのメモ保存</li>
+          <li>カテゴリ作成</li>
+          <li>アラーム設定</li>
+          <li>言語、テーマ、UIモード、背景色などの設定変更</li>
+        </ul>
+        <p>
+          これらのAnalyticsイベントには、メモ本文、カテゴリ名、録音音声、アラーム時刻、通知本文は含めていません。
+          Google Analytics for Firebaseでは、分析のために、アプリの操作情報、セッション情報、おおよその地域、端末情報、アプリまたは端末に関連する識別子などが収集される場合があります。
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Mark'n Memoが取得していない情報</h2>
+        <p>
+          現在の実装では、Mark'n Memoはユーザーアカウント機能を提供していません。
+          また、アプリ内で次の情報をユーザーに入力させる機能はありません。
+        </p>
+        <ul>
+          <li>氏名</li>
+          <li>メールアドレス</li>
+          <li>電話番号</li>
+          <li>住所</li>
+          <li>支払い情報</li>
+          <li>連絡先</li>
+          <li>写真、動画</li>
+          <li>カレンダーの予定</li>
+          <li>正確な位置情報</li>
+        </ul>
+        <p>
+          Mark'n Memoは、メモ内容を広告ターゲティングに使用しません。
+        </p>
+      </section>
+
+      <section>
+        <h2>7. 第三者サービス</h2>
+        <p>
+          Mark'n Memoは、Googleが提供するFirebase Analytics / Google Analytics for Firebaseを使用します。
+          Firebase Analyticsは、アプリの利用状況の分析と品質改善のために使用されます。
+        </p>
+        <p>
+          Googleによる情報の取り扱いについては、Googleのプライバシーポリシーをご確認ください。
+          <a class="text-link" href="https://policies.google.com/privacy" rel="noopener">Google プライバシーポリシー</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>8. データの共有</h2>
+        <p>
+          Masatikiは、ユーザーデータを販売しません。
+          Analyticsデータは、分析とアプリ改善のためにFirebase / Google Analytics for Firebaseを通じて処理されます。
+        </p>
+        <p>
+          現在の実装では、Mark'n Memoはメモ本文、カテゴリ名、録音音声、アラーム内容をMasatikiが管理するサーバーへ送信しません。
+        </p>
+      </section>
+
+      <section>
+        <h2>9. データの削除とお問い合わせ</h2>
+        <p>
+          ユーザーは、アプリ内でメモやカテゴリを削除できます。
+          Mark'n Memoは現在、アプリ内アカウントやMasatikiが管理するユーザーデータベースを提供していないため、メモデータの多くはユーザーの端末内に保存されます。
+        </p>
+        <p>
+          プライバシーに関するお問い合わせ、またはAnalyticsデータに関する削除依頼は、以下のメールアドレスまでご連絡ください。
+        </p>
+        <p>
+          <a class="text-link" href="mailto:marknmemo@gmail.com">marknmemo@gmail.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>10. このポリシーの変更</h2>
+        <p>
+          Masatikiは、アプリの機能や情報の取り扱いが変更された場合、このプライバシーポリシーを更新することがあります。
+          クラウド同期、アカウント、広告、サブスクリプション、AI文字起こし、クラッシュレポートなどの機能を追加する場合は、公開前にこのポリシーとGoogle Playのデータ安全性申告を見直します。
         </p>
       </section>
     </article>
