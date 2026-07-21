@@ -52,6 +52,10 @@ img {
   font-weight: 800;
 }
 
+.brand img {
+  border-radius: 10px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -196,6 +200,7 @@ h3 {
 
 .hero-visual img {
   width: min(68%, 260px);
+  border-radius: 24%;
   filter: drop-shadow(0 24px 28px rgba(11, 95, 88, 0.16));
 }
 

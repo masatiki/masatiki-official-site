@@ -15,8 +15,8 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 │   ├── css/styles.css
 │   ├── js/site.js
 │   └── img/
-│       ├── masatiki-logo.svg
-│       └── markn-memo-icon.svg
+│       ├── markn-brand-logo.png
+│       └── markn-memo-icon.png
 ├── robots.txt
 ├── sitemap.xml
 └── .nojekyll
