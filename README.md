@@ -9,6 +9,11 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 ├── index.html
 ├── apps/
 │   └── markn-memo.html
+├── en-us/
+│   ├── index.html
+│   ├── apps/markn-memo.html
+│   ├── privacy.html
+│   └── contact.html
 ├── privacy.html
 ├── contact.html
 ├── assets/
@@ -22,12 +27,18 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 └── .nojekyll
 ```
 
-## 公開前に差し替える場所
+## 公開前に確認する場所
 
-- `privacy.html`: 正式なプライバシーポリシー本文
-- `contact.html`: 問い合わせ用メールアドレス
+- `privacy.html` と `en-us/privacy.html`: アプリの実装とポリシー本文の一致
+- `contact.html` と `en-us/contact.html`: 問い合わせ先
 - `apps/markn-memo.html`: Google Play URL、スクリーンショット
 - `robots.txt` と `sitemap.xml`: 独自ドメインへ移行するときは公開URLを変更
+
+## 英語（米国）版
+
+- `en-us/` は米国向けに文章と見せ方を再構成した英語版です。
+- 日本語版と英語版は、各ページのナビゲーションから切り替えられます。
+- 英語版の製品情報やプライバシーポリシーは、日本語版と内容が矛盾しないように更新します。
 
 ## 新しいアプリページの追加
 
