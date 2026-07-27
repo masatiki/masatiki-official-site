@@ -453,3 +453,394 @@ h3 {
     width: 100%;
   }
 }
+
+.manual-page {
+  background:
+    linear-gradient(180deg, var(--brand-soft) 0, rgba(227, 246, 243, 0) 420px),
+    var(--surface);
+}
+
+.manual-document {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 30px 0 96px;
+}
+
+.manual-hero {
+  padding: 54px 0 42px;
+}
+
+.manual-hero h1 {
+  font-size: clamp(2.5rem, 8vw, 4.8rem);
+  line-height: 1.05;
+}
+
+.manual-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.manual-meta span {
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--brand-dark);
+  background: rgba(255, 255, 255, 0.88);
+  font-size: 0.92rem;
+  font-weight: 750;
+}
+
+.manual-toc {
+  margin: 22px 0 54px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+}
+
+.manual-toc h2 {
+  font-size: 1.45rem;
+}
+
+.manual-toc ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 28px;
+  margin: 22px 0 0;
+  padding-left: 1.5rem;
+}
+
+.manual-toc a {
+  color: var(--brand-dark);
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.65;
+}
+
+.manual-section {
+  padding: 54px 0;
+  border-top: 1px solid var(--line);
+}
+
+.manual-section h2 {
+  margin-bottom: 24px;
+}
+
+.manual-section h3 {
+  margin-top: 28px;
+  font-size: 1.25rem;
+}
+
+.manual-section > p,
+.manual-card p,
+.manual-list,
+.manual-steps,
+.manual-section details {
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.manual-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.manual-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.manual-card h3 {
+  margin-top: 0;
+}
+
+.manual-warning,
+.manual-note {
+  margin: 26px 0;
+  padding: 20px 22px;
+  border-radius: 12px;
+}
+
+.manual-warning {
+  border: 2px solid #d18b23;
+  background: #fff8e8;
+}
+
+.manual-note {
+  border-left: 5px solid var(--brand);
+  background: var(--brand-soft);
+}
+
+.manual-warning h3,
+.manual-note h3 {
+  margin-top: 0;
+}
+
+.manual-warning p,
+.manual-note p {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.manual-table-wrap {
+  margin: 24px 0;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.manual-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+}
+
+.manual-table th,
+.manual-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.65;
+}
+
+.manual-table th {
+  color: var(--brand-dark);
+  background: var(--brand-soft);
+  font-size: 0.95rem;
+}
+
+.manual-table td:first-child {
+  width: 88px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.manual-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.manual-screenshot {
+  display: grid;
+  grid-template-columns: minmax(190px, 280px) minmax(0, 1fr);
+  align-items: center;
+  gap: 26px;
+  margin: 30px 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface-alt);
+}
+
+.manual-screenshot img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(21, 33, 31, 0.16);
+}
+
+.manual-screenshot figcaption {
+  color: var(--ink);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.manual-steps {
+  display: grid;
+  gap: 14px;
+  padding-left: 1.8rem;
+}
+
+.manual-steps li {
+  padding-left: 6px;
+}
+
+.manual-steps strong,
+.manual-steps span {
+  display: block;
+}
+
+.manual-steps strong {
+  color: var(--ink);
+  font-size: 1.08em;
+}
+
+.manual-list {
+  display: grid;
+  gap: 8px;
+  padding-left: 1.5rem;
+}
+
+.manual-section details {
+  margin: 12px 0;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.manual-section summary {
+  padding: 18px 0;
+  color: var(--ink);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.manual-section details p,
+.manual-section details ol {
+  margin-top: 0;
+  padding-bottom: 18px;
+}
+
+.manual-contact {
+  text-align: center;
+}
+
+.manual-contact p {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 700px) {
+  .manual-document {
+    width: min(100% - 24px, 920px);
+    padding-top: 10px;
+  }
+
+  .manual-toc {
+    padding: 22px 20px;
+  }
+
+  .manual-toc ol,
+  .manual-card-grid,
+  .manual-screenshot {
+    grid-template-columns: 1fr;
+  }
+
+  .manual-section {
+    padding: 42px 0;
+  }
+
+  .manual-section > p,
+  .manual-card p,
+  .manual-list,
+  .manual-steps,
+  .manual-section details {
+    font-size: 1rem;
+  }
+
+  .manual-screenshot img {
+    width: min(100%, 320px);
+    margin: 0 auto;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 16mm 15mm 18mm;
+}
+
+@media print {
+  :root {
+    --ink: #111111;
+    --muted: #333333;
+  }
+
+  body,
+  .manual-page {
+    background: #ffffff;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .manual-document {
+    width: auto;
+    padding: 0;
+  }
+
+  .manual-hero {
+    padding: 0 0 12mm;
+  }
+
+  .manual-hero h1 {
+    font-size: 30pt;
+  }
+
+  .manual-hero .lead {
+    font-size: 16pt;
+  }
+
+  .manual-meta span {
+    background: #ffffff;
+  }
+
+  .manual-toc {
+    margin: 0 0 10mm;
+    padding: 7mm;
+    box-shadow: none;
+  }
+
+  .manual-section {
+    padding: 10mm 0 0;
+    break-before: page;
+  }
+
+  .manual-section h2 {
+    font-size: 22pt;
+  }
+
+  .manual-section h3 {
+    break-after: avoid-page;
+  }
+
+  .manual-card,
+  .manual-warning,
+  .manual-note,
+  .manual-table-wrap,
+  .manual-screenshot,
+  .manual-section details,
+  .manual-steps li {
+    break-inside: avoid;
+    box-shadow: none;
+  }
+
+  .manual-section details:not([open]) > *:not(summary) {
+    display: block;
+  }
+
+  .manual-section details {
+    font-size: 10.5pt;
+  }
+
+  .manual-section summary {
+    list-style: none;
+  }
+
+  .manual-screenshot {
+    grid-template-columns: 46mm minmax(0, 1fr);
+  }
+
+  .manual-screenshot img {
+    max-height: 110mm;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

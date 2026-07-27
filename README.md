@@ -8,12 +8,18 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 .
 ├── index.html
 ├── apps/
-│   └── markn-memo.html
+│   ├── markn-memo.html
+│   └── markn-memo/
+│       └── manual.html
 ├── en-us/
 │   ├── index.html
 │   ├── apps/markn-memo.html
+│   ├── apps/markn-memo/manual.html
 │   ├── privacy.html
 │   └── contact.html
+├── downloads/
+│   ├── markn-memo-user-guide-ja.pdf
+│   └── markn-memo-user-guide-en.pdf
 ├── privacy.html
 ├── contact.html
 ├── assets/
@@ -32,7 +38,25 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 - `privacy.html` と `en-us/privacy.html`: アプリの実装とポリシー本文の一致
 - `contact.html` と `en-us/contact.html`: 問い合わせ先
 - `apps/markn-memo.html`: Google Play URL、スクリーンショット
+- `apps/markn-memo/manual.html` と `en-us/apps/markn-memo/manual.html`: アプリの現在の操作と対応バージョン
+- `downloads/`: Web版と同じ原稿から生成した印刷用PDF
 - `robots.txt` と `sitemap.xml`: 独自ドメインへ移行するときは公開URLを変更
+
+## Mark'n Memo説明書の更新
+
+説明書の原稿と生成スクリプトは、Androidリポジトリの
+`docs/manual/`および`scripts/generate_markn_manual.ps1`を正本とします。
+Web版、PDF版、生成マニフェストは直接編集しません。
+
+アプリのバージョンを更新するたびに、次の順で更新します。
+
+1. Androidリポジトリで説明書本文を見直します。
+2. `manual-metadata.json`の`versionName`、`versionCode`、`updated`を更新します。
+3. Androidリポジトリから生成スクリプトを実行します。
+4. `check_markn_manual_sync.ps1`で原稿ハッシュと生成物を確認します。
+5. このサイトを先に公開してから、Google Playのアプリ更新を提出します。
+
+生成マニフェストは`assets/manual/markn-memo-manual-manifest.json`です。
 
 ## 英語（米国）版
 

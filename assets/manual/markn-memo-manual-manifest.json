@@ -1,0 +1,17 @@
+{
+    "schemaVersion":  1,
+    "appName":  "Mark\u0027n Memo",
+    "versionName":  "1.1.7",
+    "versionCode":  12,
+    "updated":  "2026-07-27",
+    "sourceSha256":  "b408dda91ffd162bb9888f638ca0a6683db45e6e3d4b4e4a824a7e5d7c6406b5",
+    "generatedAtUtc":  "2026-07-27T03:27:16Z",
+    "pages":  [
+                  "apps/markn-memo/manual.html",
+                  "en-us/apps/markn-memo/manual.html"
+              ],
+    "pdfs":  [
+                 "downloads/markn-memo-user-guide-ja.pdf",
+                 "downloads/markn-memo-user-guide-en.pdf"
+             ]
+}
