@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Mark'n Memo, including on-device notes, speech recognition, reminders, and Firebase Analytics.">
+  <meta name="description" content="Privacy Policy for Mark'n Memo, including on-device notes, speech recognition, Firebase, Google Mobile Ads, and privacy choices.">
   <title>Privacy Policy | Masatiki</title>
   <link rel="icon" href="../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../assets/css/us.css">
@@ -32,7 +32,7 @@
     <article class="us-document">
       <p class="us-eyebrow">Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 9, 2026</p>
+      <p class="updated">Last updated: July 27, 2026</p>
 
       <section>
         <h2>1. Introduction</h2>
@@ -42,8 +42,8 @@
         </p>
         <p>
           This policy explains the information Mark'n Memo handles, the information stored
-          on your device, and the information that may be sent to Firebase Analytics
-          (Google Analytics for Firebase).
+          on your device, and the information that may be processed through Firebase Remote Config,
+          Firebase Analytics (Google Analytics for Firebase), Google Mobile Ads, and Google User Messaging Platform.
         </p>
       </section>
 
@@ -56,7 +56,7 @@
           <li>Memo and category order</li>
           <li>The status of deleted memos used within the app</li>
           <li>Alarm and reminder settings you create</li>
-          <li>App settings such as language, theme, UI mode, background color, and voice input duration</li>
+          <li>App settings such as language, theme, UI mode, background color, memo date/time display, app lock, and privacy choices</li>
         </ul>
         <p>
           This information is used to operate the memo, category, settings, notification,
@@ -79,7 +79,20 @@
       </section>
 
       <section>
-        <h2>4. Notifications and alarms</h2>
+        <h2>4. Backup, restore, export, and import</h2>
+        <p>
+          Mark'n Memo uses Android’s system file picker to save backup/export files and open
+          restore/import files. You choose the on-device location or document provider, such as Google Drive.
+        </p>
+        <p>
+          Mark'n Memo does not implement its own Google sign-in, use the Drive API, or retain Drive credentials.
+          A file can contain memo text, categories, order, settings, alarms, and deletion state, but the transfer
+          and destination or source are selected by you.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Notifications and alarms</h2>
         <p>
           Mark'n Memo uses on-device notifications and alarms for reminders you create.
           Depending on your device and lock-screen settings, a notification may display memo text.
@@ -91,7 +104,7 @@
       </section>
 
       <section>
-        <h2>5. Firebase Analytics</h2>
+        <h2>6. Firebase Analytics</h2>
         <p>
           Mark'n Memo uses Firebase Analytics (Google Analytics for Firebase) to understand
           app usage and improve product quality.
@@ -114,7 +127,48 @@
       </section>
 
       <section>
-        <h2>6. Information Mark'n Memo does not request</h2>
+        <h2>7. Home announcements and Firebase Remote Config</h2>
+        <p>
+          Mark'n Memo uses Firebase Remote Config to download a short home-screen announcement
+          without requiring an app update. The app performs a limited asynchronous refresh after
+          the home screen and voice input are ready. If the refresh fails, the app uses a local
+          default or a previously cached value.
+        </p>
+        <p>
+          Remote Config may automatically process country code, language code, time zone, platform
+          and OS version, Firebase app ID, package name, SDK version, and a Firebase installation ID.
+          It does not receive memo text, category names, raw or recognized voice content, alarm times,
+          or notification text. Mark'n Memo does not request GPS or precise location for announcements.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Advertising and privacy choices</h2>
+        <p>
+          Mark'n Memo includes the Google Mobile Ads SDK and Google User Messaging Platform (UMP) SDK.
+          The current closed-test build displays Google’s official test ad rather than a production ad,
+          but the Google SDKs can still process information needed to deliver, measure, and protect ad traffic.
+        </p>
+        <ul>
+          <li>IP address, which may be used to estimate a device’s general location</li>
+          <li>App interactions such as app launches, taps, and ad views</li>
+          <li>Diagnostics such as app or SDK launch time, hang rate, and energy usage</li>
+          <li>Device or account-related identifiers, including Android advertising ID and app set ID</li>
+        </ul>
+        <p>
+          Google states that these data can be used for advertising, analytics, and fraud prevention
+          and are encrypted in transit. Mark'n Memo does not add memo text, category names, raw or
+          recognized voice content, alarm times, or notification text to ad requests.
+        </p>
+        <p>
+          At app launch, UMP refreshes consent information and shows a Google-provided consent form when required.
+          The Google Mobile Ads SDK is initialized only when UMP reports that ads may be requested. Where Google
+          requires a privacy-options entry point, Settings lets you review or change available choices.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Information Mark'n Memo does not request</h2>
         <p>
           Mark'n Memo currently does not provide user accounts and does not include app fields
           that ask users to enter the following:
@@ -134,11 +188,11 @@
       </section>
 
       <section>
-        <h2>7. Third-party services</h2>
+        <h2>10. Third-party services</h2>
         <p>
-          Mark'n Memo uses Firebase Analytics (Google Analytics for Firebase), provided by Google,
-          to analyze app usage and improve quality. Google processes analytics data on Masatiki’s behalf
-          as the provider of this service.
+          Mark'n Memo uses Firebase Remote Config, Firebase Analytics (Google Analytics for Firebase),
+          Google Mobile Ads, and Google User Messaging Platform, provided by Google, for announcements,
+          analytics and quality improvement, ad display, and required privacy notices and choices.
         </p>
         <p>
           For information about Google’s privacy practices, see the
@@ -147,19 +201,19 @@
       </section>
 
       <section>
-        <h2>8. Sharing of data</h2>
+        <h2>11. Sharing of data</h2>
         <p>
-          Masatiki does not sell user data. Analytics data is processed through Firebase Analytics
-          for analysis and app improvement.
+          Masatiki does not sell user data. Remote Config, Analytics, ad-request, and consent-related
+          information is processed through Google services for the purposes described above.
         </p>
         <p>
           In the current version, Mark'n Memo does not send memo text, category names, recorded audio,
-          or alarm content to a server managed by Masatiki.
+          recognized text, or alarm content to a server managed by Masatiki or add it to ad requests.
         </p>
       </section>
 
       <section>
-        <h2>9. Data deletion and contact</h2>
+        <h2>12. Data deletion and contact</h2>
         <p>
           You can delete memos and categories within the app. Mark'n Memo currently does not provide
           user accounts or a Masatiki-managed user database, so most memo data is stored on your device.
@@ -171,10 +225,10 @@
       </section>
 
       <section>
-        <h2>10. Changes to this policy</h2>
+        <h2>13. Changes to this policy</h2>
         <p>
           Masatiki may update this policy when app features or data practices change.
-          Before adding features such as cloud sync, accounts, advertising, subscriptions,
+          Before adding or materially changing features such as cloud sync, accounts, production advertising, subscriptions,
           AI transcription, or crash reporting, Masatiki will review this policy and the
           Google Play Data safety disclosure.
         </p>
