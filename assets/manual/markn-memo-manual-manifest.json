@@ -4,8 +4,8 @@
     "versionName":  "1.1.7",
     "versionCode":  12,
     "updated":  "2026-07-27",
-    "sourceSha256":  "b408dda91ffd162bb9888f638ca0a6683db45e6e3d4b4e4a824a7e5d7c6406b5",
-    "generatedAtUtc":  "2026-07-27T03:27:16Z",
+    "sourceSha256":  "5daece01abf54e992287b7b3d6cd79b855a15ecdc78f2944c54be0d21872b9da",
+    "generatedAtUtc":  "2026-07-27T08:13:22Z",
     "pages":  [
                   "apps/markn-memo/manual.html",
                   "en-us/apps/markn-memo/manual.html"
@@ -13,5 +13,15 @@
     "pdfs":  [
                  "downloads/markn-memo-user-guide-ja.pdf",
                  "downloads/markn-memo-user-guide-en.pdf"
-             ]
+             ],
+    "icons":  [
+                  "assets/img/manual-icons/voice-input.png",
+                  "assets/img/manual-icons/edit.png",
+                  "assets/img/manual-icons/add.png",
+                  "assets/img/manual-icons/folder.png",
+                  "assets/img/manual-icons/copy.png",
+                  "assets/img/manual-icons/alarm.png",
+                  "assets/img/manual-icons/delete.png",
+                  "assets/img/manual-icons/settings.png"
+              ]
 }

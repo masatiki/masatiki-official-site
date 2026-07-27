@@ -619,11 +619,32 @@ h3 {
   font-size: 0.95rem;
 }
 
+.manual-table th:first-child {
+  width: 140px;
+  white-space: nowrap;
+}
+
 .manual-table td:first-child {
-  width: 88px;
+  width: 140px;
   font-size: 1.2rem;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.manual-ui-icon {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.manual-ui-icon-record {
+  width: 72px;
+  height: 72px;
+}
+
+.manual-control-grid {
+  margin-top: 24px;
 }
 
 .manual-table tr:last-child td {
