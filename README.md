@@ -10,11 +10,13 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 ├── apps/
 │   ├── markn-memo.html
 │   └── markn-memo/
-│       └── manual.html
+│       ├── manual.html
+│       └── terms.html
 ├── en-us/
 │   ├── index.html
 │   ├── apps/markn-memo.html
 │   ├── apps/markn-memo/manual.html
+│   ├── apps/markn-memo/terms.html
 │   ├── privacy.html
 │   └── contact.html
 ├── downloads/
@@ -36,6 +38,7 @@ GitHub Pagesで公開するためのMasatiki公式サイトです。
 ## 公開前に確認する場所
 
 - `privacy.html` と `en-us/privacy.html`: アプリの実装とポリシー本文の一致
+- `apps/markn-memo/terms.html` と `en-us/apps/markn-memo/terms.html`: 日本語・英語の意味とアプリの実装の一致
 - `contact.html` と `en-us/contact.html`: 問い合わせ先
 - `apps/markn-memo.html`: Google Play URL、スクリーンショット
 - `apps/markn-memo/manual.html` と `en-us/apps/markn-memo/manual.html`: アプリの現在の操作と対応バージョン
