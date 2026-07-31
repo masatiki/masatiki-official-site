@@ -1,11 +1,11 @@
 {
     "schemaVersion":  1,
     "appName":  "Mark\u0027n Memo",
-    "versionName":  "1.1.9",
-    "versionCode":  14,
-    "updated":  "2026-07-29",
-    "sourceSha256":  "abcd14fd09d07598926c82f091e675f68f31669e215f058d3c1f2f2f3a66fb21",
-    "generatedAtUtc":  "2026-07-29T10:10:02Z",
+    "versionName":  "1.1.11",
+    "versionCode":  16,
+    "updated":  "2026-07-31",
+    "sourceSha256":  "ad0b09c03aea0f8c2ea4a9b709633e360409c99c0456ee2721cc0497c71cd64d",
+    "generatedAtUtc":  "2026-07-31T11:50:12Z",
     "pages":  [
                   "apps/markn-memo/manual.html",
                   "en-us/apps/markn-memo/manual.html"
