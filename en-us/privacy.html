@@ -32,7 +32,7 @@
     <article class="us-document">
       <p class="us-eyebrow">Policy</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: July 27, 2026</p>
+      <p class="updated">Last updated: August 18, 2026</p>
       <p>
         For the conditions that apply to your use of Mark'n Memo, see the separate
         <a href="apps/markn-memo/terms.html">Terms of Use</a>.
@@ -46,8 +46,9 @@
         </p>
         <p>
           This policy explains the information Mark'n Memo handles, the information stored
-          on your device, and the information that may be processed through Firebase Remote Config,
-          Firebase Analytics (Google Analytics for Firebase), Google Mobile Ads, and Google User Messaging Platform.
+          on your device, the information that may be processed through Firebase Remote Config and
+          Firebase Analytics (Google Analytics for Firebase), and the current inclusion of the Google
+          Mobile Ads SDK and Google User Messaging Platform (UMP) SDK as library dependencies.
         </p>
       </section>
 
@@ -149,25 +150,16 @@
       <section>
         <h2>8. Advertising and privacy choices</h2>
         <p>
-          Mark'n Memo includes the Google Mobile Ads SDK and Google User Messaging Platform (UMP) SDK.
-          The current closed-test build displays Google’s official test ad rather than a production ad,
-          but the Google SDKs can still process information needed to deliver, measure, and protect ad traffic.
-        </p>
-        <ul>
-          <li>IP address, which may be used to estimate a device’s general location</li>
-          <li>App interactions such as app launches, taps, and ad views</li>
-          <li>Diagnostics such as app or SDK launch time, hang rate, and energy usage</li>
-          <li>Device or account-related identifiers, including Android advertising ID and app set ID</li>
-        </ul>
-        <p>
-          Google states that these data can be used for advertising, analytics, and fraud prevention
-          and are encrypted in transit. Mark'n Memo does not add memo text, category names, raw or
-          recognized voice content, alarm times, or notification text to ad requests.
+          Mark'n Memo includes the Google Mobile Ads SDK and Google User Messaging Platform (UMP) SDK
+          as library dependencies. Advertising is disabled in the current public version, so UMP does
+          not update consent information, show consent forms, or run privacy-choice processing. The app
+          also does not initialize the Google Mobile Ads SDK, request ads, or display ads.
         </p>
         <p>
-          At app launch, UMP refreshes consent information and shows a Google-provided consent form when required.
-          The Google Mobile Ads SDK is initialized only when UMP reports that ads may be requested. Where Google
-          requires a privacy-options entry point, Settings lets you review or change available choices.
+          The current version makes no ad requests. If advertising is enabled in the future, Mark'n Memo
+          will not include memo text, category names, raw or recognized voice content, or alarm content in
+          ad requests. Before enabling advertising, Masatiki will review this Privacy Policy and the Google
+          Play Data safety disclosure.
         </p>
       </section>
 
@@ -194,9 +186,11 @@
       <section>
         <h2>10. Third-party services</h2>
         <p>
-          Mark'n Memo uses Firebase Remote Config, Firebase Analytics (Google Analytics for Firebase),
-          Google Mobile Ads, and Google User Messaging Platform, provided by Google, for announcements,
-          analytics and quality improvement, ad display, and required privacy notices and choices.
+          Mark'n Memo uses Firebase Remote Config and Firebase Analytics (Google Analytics for Firebase),
+          provided by Google, for announcements, analytics, and quality improvement. The Google Mobile Ads
+          SDK and Google User Messaging Platform (UMP) SDK are also included as library dependencies, but
+          their advertising and consent processing does not run because advertising is disabled in the
+          current public version.
         </p>
         <p>
           For information about Google’s privacy practices, see the
@@ -207,12 +201,14 @@
       <section>
         <h2>11. Sharing of data</h2>
         <p>
-          Masatiki does not sell user data. Remote Config, Analytics, ad-request, and consent-related
-          information is processed through Google services for the purposes described above.
+          Masatiki does not sell user data. Remote Config and Analytics information is processed through
+          Google services for the purposes described above.
         </p>
         <p>
           In the current version, Mark'n Memo does not send memo text, category names, recorded audio,
-          recognized text, or alarm content to a server managed by Masatiki or add it to ad requests.
+          recognized text, or alarm content to a server managed by Masatiki. The current version makes no
+          ad requests, and Mark'n Memo will not add this content to ad requests if advertising is enabled in
+          the future.
         </p>
       </section>
 
