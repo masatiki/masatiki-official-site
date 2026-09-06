@@ -4,12 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed Mark'n Memo instructions, icon meanings, safety notes, and troubleshooting in Japanese.">
-  <meta name="manual-version-name" content="1.1.13">
-  <meta name="manual-version-code" content="18">
-  <meta name="manual-source-sha256" content="c7918abb3186a86ccec2d005cecb8a83ef02e62bc6dca82c8034a1949be4476e">
+  <meta name="manual-version-name" content="1.1.16">
+  <meta name="manual-version-code" content="21">
+  <meta name="manual-source-sha256" content="6d784bb19a9689a53d4f9556be2ba7659592ed6ddc7802806b9b9e87e9ddce2d">
   <title>Mark'n Memo &#x4F7F;&#x3044;&#x65B9;&#x30FB;&#x8AAC;&#x660E;&#x66F8; | Masatiki</title>
   <link rel="icon" href="../../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../../assets/css/styles.css">
+  <style>
+/* Shared Japanese/English PDF layout; keep steps together without shortening them. */
+@media print {
+  .manual-section > p,
+  .manual-card p,
+  .manual-list,
+  .manual-steps,
+  .manual-section details,
+  .manual-note p,
+  .manual-warning p,
+  .manual-table {
+    font-size: 10.5pt;
+    line-height: 1.6;
+  }
+  .manual-section h2 { font-size: 19pt; margin-bottom: 5mm; }
+  .manual-section h3 { font-size: 13pt; margin-top: 5mm; }
+  .manual-section { padding-top: 6mm; break-before: auto; }
+  #before-use { break-before: page; }
+  .manual-section > .eyebrow, .manual-section h2 { break-after: avoid; }
+  .manual-card-grid { gap: 3mm; }
+  .manual-steps li { margin-bottom: 3mm; }
+  .manual-card { padding: 4mm; }
+  .manual-note, .manual-warning { padding: 4mm; margin-block: 4mm; }
+  .manual-table td, .manual-table th { padding: 2mm; }
+  .manual-table tbody tr:nth-child(7) { break-before: auto; }
+  .manual-ui-icon { width: 11mm; height: 11mm; }
+  .manual-screenshot { margin-block: 4mm; }
+  .manual-screenshot img { max-height: 65mm; width: auto; }
+  .manual-contact { break-before: auto; }
+}
+
+  </style>
   <link rel="alternate" hreflang="ja" href="manual.html">
   <link rel="alternate" hreflang="en-US" href="../../en-us/apps/markn-memo/manual.html">
 </head>
@@ -35,9 +67,9 @@
   <h1 id="manual-title">使い方・説明書</h1>
   <p class="lead">スマートフォンに慣れていない方にも、順番どおりに操作できるよう説明します。</p>
   <div class="manual-meta">
-    <span>対応バージョン 1.1.13</span>
-    <span>ビルド 18</span>
-    <span>更新日 2026&#x5E74;8&#x6708;5&#x65E5;</span>
+    <span>対応バージョン 1.1.16</span>
+    <span>ビルド 21</span>
+    <span>更新日 2026&#x5E74;9&#x6708;6&#x65E5;</span>
   </div>
   <div class="hero-actions no-print">
     <a class="button primary" href="../../downloads/markn-memo-user-guide-ja.pdf" download>PDF版をダウンロード・印刷</a>
@@ -49,6 +81,7 @@
   <h2>知りたいことから選べます</h2>
   <ol>
     <li><a href="#before-use">最初に知っておくこと</a></li>
+    <li><a href="#first-practice">マーくんと実際に操作してみる</a></li>
     <li><a href="#screen-icons">画面とアイコンの意味</a></li>
     <li><a href="#voice-memo">声でメモを残す</a></li>
     <li><a href="#typed-memo">文字を入力して残す</a></li>
@@ -76,11 +109,36 @@
       <h3>音声認識は端末の機能を使います</h3>
       <p>認識できる言語や正確さ、通信が必要かどうかは、端末・Android・音声認識サービスによって異なります。</p>
     </article>
+    <article class="manual-card">
+      <h3>利用開始前に規約を確認します</h3>
+      <p>最初の起動時に、利用規約への同意とプライバシーポリシーの確認が必要です。同意しない場合はアプリを終了できます。</p>
+    </article>
   </div>
   <aside class="manual-warning">
     <h3>大切な注意</h3>
     <p>アプリを削除すると、端末内のメモも失われる場合があります。アプリの削除、端末の初期化、機種変更の前には、必ずバックアップを作成してください。</p>
   </aside>
+</section>
+
+<section id="first-practice" class="manual-section">
+  <p class="eyebrow">はじめての体験</p>
+  <h2>マーくんと実際に操作してみる</h2>
+  <p>初めて使うときは、短い紹介の後、ホーム画面で小さなマーくんが操作を案内します。吹き出しを読み、明るく示されたボタンを自分で押して進みます。</p>
+  <ol class="manual-steps">
+    <li><strong>ホーム画面の大きなマーくんを押します。</strong><span>マイクの許可が出たら内容を確認して許可し、音声入力を始めます。</span></li>
+    <li><strong>ひとこと話して、もう一度大きなマーくんを押します。</strong><span>話した内容が文字になり、一時メモへ保存されます。長押しで話した場合は、指を離して終了します。</span></li>
+    <li><strong>保存できた案内が出たら、明るい一時メモボタンを押します。</strong><span>できあがったメモを読んで確認します。確認を終えるまで、次の操作へ勝手には進みません。</span></li>
+    <li><strong>「整理してみる」を押します。</strong><span>メモの横にある四角を押し、チェックが付いたことを確認します。</span></li>
+    <li><strong>明るいカテゴリのフォルダーボタンを押します。</strong><span>メモをしまうカテゴリを選びます。新規利用時には「アイデア」「買い物」「その他」を用意しています。</span></li>
+    <li><strong>一時メモからメモがなくなったことを確認します。</strong><span>メモはカテゴリへ移ったので、削除されたわけではありません。</span></li>
+    <li><strong>宝箱ボタンを押します。</strong><span>カテゴリの名前が並ぶ画面が開きます。</span></li>
+    <li><strong>さっき選んだカテゴリ名を押します。</strong><span>カテゴリの中にメモがあることを、自分の目で確認します。</span></li>
+    <li><strong>「アラームを体験する」を押します。</strong><span>メモの四角にチェックを入れ、明るい時計ボタンを押します。</span></li>
+    <li><strong>知らせてほしい時間を選びます。</strong><span>実際に鳴るアラームが設定されます。設定後はメモの時計マークと文字色の変化を確認します。</span></li>
+    <li><strong>確認が終わったら「次へ」を押します。</strong><span>最後の案内で「はじめる」を押して終了するか、「使い方・説明書」を開けます。</span></li>
+  </ol>
+  <aside class="manual-note"><h3>今はしなくても大丈夫</h3><p>音声入力は「スキップ」、整理やアラームは「今はしない」で飛ばせます。設定の「音声入力を体験」から、もう一度やってみることもできます。体験で作ったメモは通常のメモとして残ります。不要なアラームは、メモを選んで時計ボタンを押し、「アラームを解除」で解除できます。</p></aside>
+  <p>以前から利用している方には、この実操作ガイドを更新時に自動表示しません。カテゴリをすべて削除している場合は、整理の体験を省いてアラームの案内へ進みます。</p>
 </section>
 
 <section id="screen-icons" class="manual-section">
@@ -93,6 +151,8 @@
         <tr><th>実際のアイコン</th><th>名前</th><th>できること</th></tr>
       </thead>
       <tbody>
+        <tr><td><img class="manual-ui-icon" src="../../assets/img/manual-icons/temporary-memos.png" alt="一時メモのアイコン" width="64" height="64"></td><td>一時メモ</td><td>保存したメモを確認し、カテゴリへ整理する前のメモを読み返します。</td></tr>
+        <tr><td><img class="manual-ui-icon" src="../../assets/img/manual-icons/treasure.png" alt="宝箱のアイコン" width="64" height="64"></td><td>宝箱</td><td>カテゴリ一覧を開きます。カテゴリ名を押すと、整理したメモを読めます。</td></tr>
         <tr><td><span class="manual-voice-button-preview"><img class="manual-ui-icon manual-ui-icon-record" src="../../assets/img/manual-icons/voice-input.png" alt="青緑色の円形の外枠に入ったマーくんの音声入力ボタン" width="72" height="72"></span></td><td>音声入力</td><td>話した内容を文字のメモにします。</td></tr>
         <tr><td><img class="manual-ui-icon" src="../../assets/img/manual-icons/edit.png" alt="鉛筆の編集アイコン" width="64" height="64"></td><td>編集</td><td>メモ本文やカテゴリ名を直します。</td></tr>
         <tr><td><img class="manual-ui-icon" src="../../assets/img/manual-icons/add.png" alt="プラスの追加アイコン" width="64" height="64"></td><td>追加</td><td>新しいメモやカテゴリを追加します。</td></tr>
@@ -107,7 +167,7 @@
   <div class="manual-card-grid manual-control-grid">
     <article class="manual-card">
       <h3>すべて選ぶ</h3>
-      <p>「All」の左にある四角を押すと、表示中のメモをまとめて選択・解除できます。</p>
+      <p>「すべて」の左にある四角を押すと、表示中のメモをまとめて選択・解除できます。</p>
     </article>
     <article class="manual-card">
       <h3>並び替え</h3>
@@ -156,12 +216,17 @@
 <section id="organize" class="manual-section">
   <p class="eyebrow">05</p>
   <h2>メモを整理して読み返す</h2>
+  <p>初めて使うときは、アプリの表示言語に合わせた「アイデア」「買い物」「その他」のカテゴリを用意しています。名前の変更・削除は自由です。更新時に既存のカテゴリへ勝手に追加したり、削除したカテゴリを作り直したりはしません。言語を変えても、保存済みのカテゴリ名は自動では変わりません。</p>
   <h3>一時メモをカテゴリへ整理する</h3>
   <ol class="manual-steps">
     <li><strong>一時メモの画面を開きます。</strong></li>
-    <li><strong>整理したいメモの左にある四角を押します。</strong><span>まとめて選ぶ場合は「All」を押します。</span></li>
+    <li><strong>整理したいメモの左にある四角を押します。</strong><span>まとめて選ぶ場合は「すべて」を押します。</span></li>
     <li><strong>フォルダーのアイコンを押します。</strong></li>
-    <li><strong>移動先のカテゴリを選びます。</strong></li>
+    <li><strong>メモをしまうカテゴリを選びます。</strong></li>
+    <li><strong>一時メモからメモがなくなったことを確認します。</strong><span>選んだカテゴリへ移ったためで、削除ではありません。</span></li>
+    <li><strong>画面上中央の宝箱ボタンを押します。</strong><span>カテゴリの一覧が開きます。</span></li>
+    <li><strong>移動先に選んだカテゴリ名を押します。</strong></li>
+    <li><strong>カテゴリの中にメモがあることを確認します。</strong></li>
   </ol>
   <h3>カテゴリを作る</h3>
   <ol class="manual-steps">
@@ -191,13 +256,19 @@
   <p class="eyebrow">06</p>
   <h2>アラームで知らせる</h2>
   <ol class="manual-steps">
-    <li><strong>知らせてほしいメモの時計・タイマーのアイコンを押します。</strong></li>
+    <li><strong>一時メモ、またはカテゴリの中で、知らせてほしいメモの横の四角にチェックを入れます。</strong></li>
+    <li><strong>操作欄の時計ボタンを押します。</strong></li>
     <li><strong>時間を選びます。</strong><span>「5分後」「10分後」「30分後」「1時間後」、または日付と時刻を指定できます。</span></li>
     <li><strong>日付と時刻を選んだ場合は「OK」を押します。</strong><span>追加の確定操作はありません。</span></li>
   </ol>
+  <aside class="manual-note"><h3>設定できたことを確認する</h3><p>設定直後に案内文が表示されます。アラームのあるメモは本文のはじめに時計マークが付き、文字が青い太字になります。一覧の本文にアラーム時刻は常時表示しません。時刻の確認・変更や解除は、メモを選んで時計ボタンを押します。「アラームを解除」で解除すると、時計マークとアラーム用の文字色も元に戻ります。</p></aside>
   <aside class="manual-warning">
     <h3>通知が遅れることがあります</h3>
     <p>Androidの省電力機能や「正確なアラーム」の許可状態によって、通知時刻が前後する場合があります。画面に案内が出たときは、端末の設定画面で許可を確認してください。</p>
+  </aside>
+  <aside class="manual-note">
+    <h3>ロック中の全画面表示</h3>
+    <p>Android 14以降で全画面アラーム表示が許可されていない場合は、アラーム設定後に説明が表示されます。「設定を開く」から端末の設定画面で許可できます。許可しない場合も、音・振動・高優先度通知でお知らせします。</p>
   </aside>
   <p>過去の日時は登録できません。端末を再起動した場合やアプリを更新した場合も、保存済みの未来のアラームは再登録されます。</p>
 </section>
@@ -213,7 +284,7 @@
     <article class="manual-card"><h3>言語・テーマ・背景</h3><p>表示言語、明るい・暗いテーマ、背景色、カジュアル・ビジネス表示を選べます。カジュアル表示では「着替えモード」をONにすると、季節に合わせてマーくんの衣装と背景演出が自動で変わります。</p></article>
     <article class="manual-card"><h3>メモの表示</h3><p>作成日時を表示するかどうかや、メモの並び順を変更できます。</p></article>
     <article class="manual-card"><h3>アプリロック</h3><p>端末の指紋・顔・PINなどを使い、設定やメモ画面を保護できます。ホーム画面はすぐ使えるようロック対象外です。</p></article>
-    <article class="manual-card"><h3>チュートリアル</h3><p>初回に表示された短い使い方を、いつでも見直せます。</p></article>
+    <article class="manual-card"><h3>チュートリアル</h3><p>「チュートリアル」で最初の短い紹介を見直せます。「音声入力を体験」では、声でメモを作り、カテゴリへの整理・アラーム設定まで実際に操作できます。</p></article>
     <article class="manual-card"><h3>アプリ情報</h3><p>バージョン、更新確認、詳しい説明書、プライバシーポリシーを確認できます。</p></article>
   </div>
 </section>

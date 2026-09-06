@@ -1,27 +1,29 @@
 {
-    "schemaVersion":  1,
-    "appName":  "Mark\u0027n Memo",
-    "versionName":  "1.1.13",
-    "versionCode":  18,
-    "updated":  "2026-08-05",
-    "sourceSha256":  "c7918abb3186a86ccec2d005cecb8a83ef02e62bc6dca82c8034a1949be4476e",
-    "generatedAtUtc":  "2026-08-05T04:17:43Z",
-    "pages":  [
-                  "apps/markn-memo/manual.html",
-                  "en-us/apps/markn-memo/manual.html"
-              ],
-    "pdfs":  [
-                 "downloads/markn-memo-user-guide-ja.pdf",
-                 "downloads/markn-memo-user-guide-en.pdf"
-             ],
-    "icons":  [
-                  "assets/img/manual-icons/voice-input.png",
-                  "assets/img/manual-icons/edit.png",
-                  "assets/img/manual-icons/add.png",
-                  "assets/img/manual-icons/folder.png",
-                  "assets/img/manual-icons/copy.png",
-                  "assets/img/manual-icons/alarm.png",
-                  "assets/img/manual-icons/delete.png",
-                  "assets/img/manual-icons/settings.png"
-              ]
+  "schemaVersion": 1,
+  "appName": "Mark'n Memo",
+  "versionName": "1.1.16",
+  "versionCode": 21,
+  "updated": "2026-09-06",
+  "sourceSha256": "6d784bb19a9689a53d4f9556be2ba7659592ed6ddc7802806b9b9e87e9ddce2d",
+  "generatedAtUtc": "2026-09-06T11:42:52Z",
+  "pages": [
+    "apps/markn-memo/manual.html",
+    "en-us/apps/markn-memo/manual.html"
+  ],
+  "pdfs": [
+    "downloads/markn-memo-user-guide-ja.pdf",
+    "downloads/markn-memo-user-guide-en.pdf"
+  ],
+  "icons": [
+    "assets/img/manual-icons/voice-input.png",
+    "assets/img/manual-icons/temporary-memos.png",
+    "assets/img/manual-icons/treasure.png",
+    "assets/img/manual-icons/edit.png",
+    "assets/img/manual-icons/add.png",
+    "assets/img/manual-icons/folder.png",
+    "assets/img/manual-icons/copy.png",
+    "assets/img/manual-icons/alarm.png",
+    "assets/img/manual-icons/delete.png",
+    "assets/img/manual-icons/settings.png"
+  ]
 }

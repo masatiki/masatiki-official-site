@@ -4,12 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed Mark'n Memo instructions, icon meanings, safety notes, and troubleshooting.">
-  <meta name="manual-version-name" content="1.1.13">
-  <meta name="manual-version-code" content="18">
-  <meta name="manual-source-sha256" content="c7918abb3186a86ccec2d005cecb8a83ef02e62bc6dca82c8034a1949be4476e">
+  <meta name="manual-version-name" content="1.1.16">
+  <meta name="manual-version-code" content="21">
+  <meta name="manual-source-sha256" content="6d784bb19a9689a53d4f9556be2ba7659592ed6ddc7802806b9b9e87e9ddce2d">
   <title>Mark'n Memo User Guide | Masatiki</title>
   <link rel="icon" href="../../../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../../../assets/css/styles.css">
+  <style>
+/* Shared Japanese/English PDF layout; keep steps together without shortening them. */
+@media print {
+  .manual-section > p,
+  .manual-card p,
+  .manual-list,
+  .manual-steps,
+  .manual-section details,
+  .manual-note p,
+  .manual-warning p,
+  .manual-table {
+    font-size: 10.5pt;
+    line-height: 1.6;
+  }
+  .manual-section h2 { font-size: 19pt; margin-bottom: 5mm; }
+  .manual-section h3 { font-size: 13pt; margin-top: 5mm; }
+  .manual-section { padding-top: 6mm; break-before: auto; }
+  #before-use { break-before: page; }
+  .manual-section > .eyebrow, .manual-section h2 { break-after: avoid; }
+  .manual-card-grid { gap: 3mm; }
+  .manual-steps li { margin-bottom: 3mm; }
+  .manual-card { padding: 4mm; }
+  .manual-note, .manual-warning { padding: 4mm; margin-block: 4mm; }
+  .manual-table td, .manual-table th { padding: 2mm; }
+  .manual-table tbody tr:nth-child(7) { break-before: auto; }
+  .manual-ui-icon { width: 11mm; height: 11mm; }
+  .manual-screenshot { margin-block: 4mm; }
+  .manual-screenshot img { max-height: 65mm; width: auto; }
+  .manual-contact { break-before: auto; }
+}
+
+  </style>
   <link rel="alternate" hreflang="en-US" href="manual.html">
   <link rel="alternate" hreflang="ja" href="../../../apps/markn-memo/manual.html">
 </head>
@@ -35,9 +67,9 @@
   <h1 id="manual-title">User guide</h1>
   <p class="lead">Clear, step-by-step instructions for people who are new to smartphones.</p>
   <div class="manual-meta">
-    <span>For version 1.1.13</span>
-    <span>Build 18</span>
-    <span>Updated August 5, 2026</span>
+    <span>For version 1.1.16</span>
+    <span>Build 21</span>
+    <span>Updated September 6, 2026</span>
   </div>
   <div class="hero-actions no-print">
     <a class="button primary" href="../../../downloads/markn-memo-user-guide-en.pdf" download>Download or print the PDF</a>
@@ -49,6 +81,7 @@
   <h2>Choose what you need</h2>
   <ol>
     <li><a href="#before-use">Before you begin</a></li>
+    <li><a href="#first-practice">Try the hands-on guide with Markun</a></li>
     <li><a href="#screen-icons">Screens and icons</a></li>
     <li><a href="#voice-memo">Create a memo with your voice</a></li>
     <li><a href="#typed-memo">Type a memo</a></li>
@@ -67,8 +100,30 @@
     <article class="manual-card"><h3>The app saves text</h3><p>Mark'n Memo turns speech into text. It does not save an audio recording of your voice.</p></article>
     <article class="manual-card"><h3>Memos are stored on your device</h3><p>There is no account-based automatic sync. Use Data management in Settings to back up important memos regularly.</p></article>
     <article class="manual-card"><h3>Speech recognition comes from your device</h3><p>Supported languages, accuracy, and network requirements vary by device, Android version, and speech recognition service.</p></article>
+    <article class="manual-card"><h3>Review the terms before use</h3><p>On first launch, you must agree to the Terms of Use and acknowledge the Privacy Policy. You can exit the app if you do not agree.</p></article>
   </div>
   <aside class="manual-warning"><h3>Important</h3><p>Removing the app may also remove memos stored on the device. Create a backup before uninstalling the app, resetting the device, or moving to a new phone.</p></aside>
+</section>
+
+<section id="first-practice" class="manual-section">
+  <p class="eyebrow">First hands-on experience</p>
+  <h2>Try the hands-on guide with Markun</h2>
+  <p>On first use, a small Markun guides you on Home after the short introduction. Read each speech bubble and tap the highlighted control yourself.</p>
+  <ol class="manual-steps">
+    <li><strong>Tap the large Markun on Home.</strong><span>If Android asks for microphone access, review and allow it to begin voice input.</span></li>
+    <li><strong>Say a few words, then tap the large Markun again.</strong><span>Your words become text and are saved in Temporary memos. If you press and hold instead, release to finish.</span></li>
+    <li><strong>After the saved message appears, tap the highlighted Temporary memos button.</strong><span>Read the memo you just made. The guide waits for you to finish checking it.</span></li>
+    <li><strong>Tap Try organizing.</strong><span>Tap the square beside your memo and check that it is selected.</span></li>
+    <li><strong>Tap the highlighted category folder button.</strong><span>Choose where to keep your memo. Ideas, Shopping, and Other are available on a fresh installation.</span></li>
+    <li><strong>Check that the memo has left Temporary memos.</strong><span>It moved to your chosen category; it was not deleted.</span></li>
+    <li><strong>Tap the treasure chest button.</strong><span>The category names appear.</span></li>
+    <li><strong>Tap the category you chose.</strong><span>Check that your memo is inside that category.</span></li>
+    <li><strong>Tap Try an alarm.</strong><span>Select the square beside the memo, then tap the highlighted clock button.</span></li>
+    <li><strong>Choose when to be reminded.</strong><span>This sets a real alarm. Check the clock mark and changed memo text color after saving.</span></li>
+    <li><strong>When you have checked the result, tap Next.</strong><span>Finish with Get started or open User Guide from the final message.</span></li>
+  </ol>
+  <aside class="manual-note"><h3>You can skip a step</h3><p>Use Skip during voice input or Not now during organizing and alarms. Open Try voice input in Settings to try again. Memos created during the guide remain as ordinary memos. To remove a practice alarm, select the memo, tap the clock button, and choose Clear alarm.</p></aside>
+  <p>Existing users do not automatically see the hands-on guide after updating. If you have deleted all custom categories, the guide skips organizing and continues to alarms.</p>
 </section>
 
 <section id="screen-icons" class="manual-section">
@@ -79,6 +134,8 @@
     <table class="manual-table">
       <thead><tr><th>Actual icon</th><th>Name</th><th>What it does</th></tr></thead>
       <tbody>
+        <tr><td><img class="manual-ui-icon" src="../../../assets/img/manual-icons/temporary-memos.png" alt="Temporary memos icon" width="64" height="64"></td><td>Temporary memos</td><td>Read saved memos before organizing them into categories.</td></tr>
+        <tr><td><img class="manual-ui-icon" src="../../../assets/img/manual-icons/treasure.png" alt="Treasure chest icon" width="64" height="64"></td><td>Treasure chest</td><td>Open the category list. Tap a category name to read the memos stored inside.</td></tr>
         <tr><td><span class="manual-voice-button-preview"><img class="manual-ui-icon manual-ui-icon-record" src="../../../assets/img/manual-icons/voice-input.png" alt="Voice input button with Markun inside its teal circular frame" width="72" height="72"></span></td><td>Voice input</td><td>Turns speech into a text memo.</td></tr>
         <tr><td><img class="manual-ui-icon" src="../../../assets/img/manual-icons/edit.png" alt="Pencil edit icon" width="64" height="64"></td><td>Edit</td><td>Changes memo text or a category name.</td></tr>
         <tr><td><img class="manual-ui-icon" src="../../../assets/img/manual-icons/add.png" alt="Plus add icon" width="64" height="64"></td><td>Add</td><td>Adds a new memo or category.</td></tr>
@@ -139,12 +196,17 @@
 <section id="organize" class="manual-section">
   <p class="eyebrow">05</p>
   <h2>Organize and read memos</h2>
+  <p>A fresh installation starts with Ideas, Shopping, and Other in the app language. You can rename or delete these categories freely. Updating does not add them to existing categories or recreate deleted ones. Changing the app language does not automatically rename saved categories.</p>
   <h3>Move temporary memos to a category</h3>
   <ol class="manual-steps">
     <li><strong>Open Temporary memos.</strong></li>
     <li><strong>Tap the square beside each memo.</strong><span>Tap All to select every memo shown.</span></li>
     <li><strong>Tap the folder icon.</strong></li>
-    <li><strong>Choose the destination category.</strong></li>
+    <li><strong>Choose the category where you want to keep the memo.</strong></li>
+    <li><strong>Check that the memo has left Temporary memos.</strong><span>It moved to the category; it was not deleted.</span></li>
+    <li><strong>Tap the treasure chest button at the top center.</strong><span>The category list opens.</span></li>
+    <li><strong>Tap the destination category name.</strong></li>
+    <li><strong>Check that your memo is inside the category.</strong></li>
   </ol>
   <h3>Create a category</h3>
   <ol class="manual-steps">
@@ -174,11 +236,14 @@
   <p class="eyebrow">06</p>
   <h2>Set an alarm</h2>
   <ol class="manual-steps">
-    <li><strong>Tap the clock or timer icon for a memo.</strong></li>
+    <li><strong>In Temporary memos or a category, select the square beside the memo you want a reminder for.</strong></li>
+    <li><strong>Tap the clock button in the action bar.</strong></li>
     <li><strong>Choose a time.</strong><span>Select 5, 10, or 30 minutes, 1 hour, or choose a date and time.</span></li>
     <li><strong>When choosing a date and time, tap OK.</strong><span>No second confirmation is needed.</span></li>
   </ol>
+  <aside class="manual-note"><h3>Check that the alarm is set</h3><p>A confirmation appears immediately after setting an alarm. The memo starts with a clock mark and its text becomes bold blue. The alarm time is not permanently shown in the memo list. To check or change the time, select the memo and tap the clock button. Choose Clear alarm to remove the alarm, its clock mark, and the alarm text color.</p></aside>
   <aside class="manual-warning"><h3>A notification can be late</h3><p>Android power saving and the exact alarm permission can move the notification time. If the app shows instructions, check the permission in Android Settings.</p></aside>
+  <aside class="manual-note"><h3>Full-screen display while locked</h3><p>On Android 14 or later, if full-screen alarm display is not allowed, the app explains this after you set an alarm. Use Open settings to allow it in Android Settings. If you do not allow it, the alarm still uses sound, vibration, and a high-priority notification.</p></aside>
   <p>You cannot save a time in the past. Future alarms are registered again after a device restart or app update.</p>
 </section>
 
@@ -193,7 +258,7 @@
     <article class="manual-card"><h3>Language, theme, and background</h3><p>Choose the app language, light or dark theme, background color, and casual or business appearance. In Casual mode, turn on Dress-up mode to let Markun's outfit and home-screen effects change with the seasons.</p></article>
     <article class="manual-card"><h3>Memo display</h3><p>Show or hide creation dates and change the memo order.</p></article>
     <article class="manual-card"><h3>App lock</h3><p>Protect settings and memo screens with the device fingerprint, face, PIN, pattern, or password. Home stays available for quick capture.</p></article>
-    <article class="manual-card"><h3>Tutorial</h3><p>Review the short first-use introduction at any time.</p></article>
+    <article class="manual-card"><h3>Tutorial</h3><p>Open Tutorial to review the short introduction. Choose Try voice input to create a memo by speaking, organize it into a category, and try setting an alarm with the hands-on guide.</p></article>
     <article class="manual-card"><h3>App info</h3><p>See the version, check for updates, open this guide, and read the privacy policy.</p></article>
   </div>
 </section>
