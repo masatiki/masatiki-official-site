@@ -1,0 +1,27 @@
+/* Keep the official artwork unmodified, with a quarter-height clear space. */
+.hero-actions,
+.us-actions {
+  align-items: center;
+  gap: 16px;
+}
+
+.play-store-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: #fff;
+  text-decoration: none;
+}
+
+.play-store-badge img {
+  display: block;
+  width: 216px;
+  height: auto;
+}
+
+.play-store-badge:focus-visible {
+  outline: 3px solid #006d77;
+  outline-offset: 2px;
+}
