@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed Mark'n Memo instructions, icon meanings, safety notes, and troubleshooting in Japanese.">
-  <meta name="manual-version-name" content="1.1.18">
-  <meta name="manual-version-code" content="23">
-  <meta name="manual-source-sha256" content="abf5443070a0c00f7a19c4e961db5b52f76805a4a2a97e42f76845fbe834cf6a">
+  <meta name="manual-version-name" content="1.1.19">
+  <meta name="manual-version-code" content="24">
+  <meta name="manual-source-sha256" content="0b76473e323004b5bfdeaa0d3fc4b782e90b1a1cc82ae9b5769b9a21e6faec83">
   <title>Mark'n Memo &#x4F7F;&#x3044;&#x65B9;&#x30FB;&#x8AAC;&#x660E;&#x66F8; | Masatiki</title>
   <link rel="icon" href="../../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -67,15 +67,17 @@
   <h1 id="manual-title">使い方・説明書</h1>
   <p class="lead">スマートフォンに慣れていない方にも、順番どおりに操作できるよう説明します。</p>
   <div class="manual-meta">
-    <span>対応バージョン 1.1.18</span>
-    <span>ビルド 23</span>
-    <span>更新日 2026&#x5E74;9&#x6708;16&#x65E5;</span>
+    <span>対応バージョン 1.1.19</span>
+    <span>ビルド 24</span>
+    <span>更新日 2026&#x5E74;10&#x6708;28&#x65E5;</span>
   </div>
   <div class="hero-actions no-print">
     <a class="button primary" href="../../downloads/markn-memo-user-guide-ja.pdf" download>PDF版をダウンロード・印刷</a>
     <a class="button secondary" href="../markn-memo.html">アプリ紹介へ戻る</a>
   </div>
 </section>
+
+<aside class="manual-note"><h2>1.1.19の主な変更</h2><p>メモへの音声追記、カテゴリでの音声作成、スワイプ完了と復元を追加しました。アラームの日時案内とロックを改善し、録音ボタンと着替え表示も整えました。更新後の既存利用者には、流れるお知らせで変更を一度ご案内します。</p></aside>
 
 <nav class="manual-toc" aria-label="説明書の目次">
   <h2>知りたいことから選べます</h2>
@@ -242,6 +244,20 @@
     <img src="../../assets/img/screenshots/markn-memo-categories.png" alt="カテゴリ一覧画面" width="1080" height="2400">
     <figcaption>カテゴリ一覧。カテゴリを押すと、その中のメモを読み返せます。</figcaption>
   </figure>
+  <h3>声でメモに追記する</h3>
+  <ol class="manual-steps">
+    <li><strong>一時メモ、またはカテゴリ内のメモを開きます。</strong><span>本文欄の端にある小さなマイクを押します。</span></li>
+    <li><strong>追加したい内容を話します。</strong><span>音声認識が終わると、元の文章の後ろへ改行して追加されます。元の内容は残ります。</span></li>
+    <li><strong>追加された文字を確認します。</strong><span>間違いは手入力で直せます。音声入力をキャンセルした場合、本文は変わりません。</span></li>
+  </ol>
+  <p>カテゴリの「＋」で開く新規メモ欄にもマイクがあります。話した内容を確認し、「保存」を押すとそのカテゴリへ保存されます。保存前は下書きです。音声認識の利用可否は端末の音声認識サービスによります。</p>
+  <h3>済んだメモをスワイプで完了にする</h3>
+  <ol class="manual-steps">
+    <li><strong>メモを左右どちらかへスワイプして指を離します。</strong><span>チェックと薄い文字・取り消し線が表示され、通常の一覧から「完了したメモ」へ移ります。短いスワイプでは変わりません。</span></li>
+    <li><strong>一覧の「完了したメモ（件数）」を開きます。</strong><span>内容を確認できます。各メモの「元に戻す」はその1件を、下部の「すべて元に戻す」は今見ている一時メモまたはカテゴリ内の完了メモをまとめて戻します。</span></li>
+    <li><strong>再び使うメモは元へ戻します。</strong><span>本文とカテゴリは保持されます。完了は削除とは別で、自動削除されません。編集や削除をするときも、まず元へ戻します。</span></li>
+  </ol>
+  <aside class="manual-warning"><h3>完了したメモのアラーム</h3><p>完了にすると、そのメモのアラームは解除されます。メモを元に戻してもアラームは自動で復活しません。必要なら改めて設定してください。チェックボックスは整理などの対象選択用で、完了操作とは別です。</p></aside>
   <h3>読む・編集する・並び替える</h3>
   <ul class="manual-list">
     <li>メモ本文を押すと編集できます。</li>
@@ -255,6 +271,7 @@
 <section id="alarm" class="manual-section">
   <p class="eyebrow">06</p>
   <h2>アラームで知らせる</h2>
+  <p>時刻は「16:00（午後4時00分）」のように24時間表記と午前・午後を併記します。朝4時は04:00、夕方4時は16:00です。過去の日時では設定できない案内が出て画面が残るので、未来の日時を選び直してください。</p>
   <ol class="manual-steps">
     <li><strong>一時メモ、またはカテゴリの中で、知らせてほしいメモの横の四角にチェックを入れます。</strong></li>
     <li><strong>操作欄の時計ボタンを押します。</strong></li>
@@ -282,10 +299,10 @@
   </figure>
   <div class="manual-card-grid">
     <article class="manual-card"><h3>言語・テーマ・背景</h3><p>表示言語、明るい・暗いテーマ、背景色、カジュアル・ビジネス表示を選べます。カジュアル表示では「着替えモード」をONにすると、季節に合わせてマーくんの衣装と背景演出が自動で変わります。</p></article>
-    <article class="manual-card"><h3>季節の特別な衣装とお知らせ</h3><p>着替えモードは最初はOFFです。ONにすると、毎年10月24〜31日はハロウィン、12月18〜25日はクリスマス、1月1〜7日はお正月の衣装になります。期間が終わると通常の季節の衣装へ戻ります。</p><p>お正月は、アプリの表示言語が日本語なら羽織、それ以外なら共通のお祝い服になります。端末の現地日付に合わせて切り替わり、通信は不要です。カジュアル表示のお知らせも期間に合わせて変わり、着替えモードがOFFでも楽しめます。</p></article>
+    <article class="manual-card"><h3>季節の特別な衣装とお知らせ</h3><p>着替えモードは最初はOFFです。ONにすると、毎年10月10〜31日はハロウィン、12月4〜25日はクリスマス、1月1〜14日はお正月の衣装になります。期間が終わると通常の季節の衣装へ戻ります。</p><p>お正月は、アプリの表示言語が日本語なら羽織、それ以外なら共通のお祝い服になります。端末の現地日付に合わせて切り替わり、通信は不要です。音声入力中も同じ衣装で胸のボタンを押す姿になります。新年は丸いボタン内に「謹賀新年」とその年の和暦、共通版には「Happy New Year」と西暦が表示されます。カジュアル表示のお知らせも期間に合わせて変わり、着替えモードがOFFでも楽しめます。</p></article>
     <article class="manual-card"><h3>四季のお知らせ</h3><p>日本語のカジュアル表示では、春（3〜5月）、夏（6〜8月）、秋（9〜11月）、冬（12〜2月）のお知らせが衣替えと同じ時期に自動で切り替わります。通信や着替えモードのON操作は不要です。同じ日は同じ文章を表示し、翌日は別の候補へ進みます。特別な行事の期間は行事のお知らせが優先され、期間終了後は季節のお知らせへ戻ります。ビジネス表示と他言語の通常のお知らせは従来どおりです。</p></article>
     <article class="manual-card"><h3>メモの表示</h3><p>作成日時を表示するかどうかや、メモの並び順を変更できます。</p></article>
-    <article class="manual-card"><h3>アプリロック</h3><p>端末の指紋・顔・PINなどを使い、設定やメモ画面を保護できます。ホーム画面はすぐ使えるようロック対象外です。</p></article>
+    <article class="manual-card"><h3>アプリロック</h3><p>端末の指紋・顔・PINなどを使い、設定やメモ画面を保護できます。ホーム画面はすぐ使えるようロック対象外です。ロックをONにして本人確認が成功するとホームへ戻り、その直後から設定やメモ画面を開く際に認証が必要になります。再起動は不要です。</p></article>
     <article class="manual-card"><h3>チュートリアル</h3><p>「チュートリアル」で最初の短い紹介を見直せます。「音声入力を体験」では、声でメモを作り、カテゴリへの整理・アラーム設定まで実際に操作できます。</p></article>
     <article class="manual-card"><h3>アプリ情報</h3><p>バージョン、更新確認、詳しい説明書、プライバシーポリシーを確認できます。</p></article>
   </div>

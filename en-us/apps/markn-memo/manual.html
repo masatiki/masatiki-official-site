@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed Mark'n Memo instructions, icon meanings, safety notes, and troubleshooting.">
-  <meta name="manual-version-name" content="1.1.18">
-  <meta name="manual-version-code" content="23">
-  <meta name="manual-source-sha256" content="abf5443070a0c00f7a19c4e961db5b52f76805a4a2a97e42f76845fbe834cf6a">
+  <meta name="manual-version-name" content="1.1.19">
+  <meta name="manual-version-code" content="24">
+  <meta name="manual-source-sha256" content="0b76473e323004b5bfdeaa0d3fc4b782e90b1a1cc82ae9b5769b9a21e6faec83">
   <title>Mark'n Memo User Guide | Masatiki</title>
   <link rel="icon" href="../../../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../../../assets/css/styles.css">
@@ -67,15 +67,17 @@
   <h1 id="manual-title">User guide</h1>
   <p class="lead">Clear, step-by-step instructions for people who are new to smartphones.</p>
   <div class="manual-meta">
-    <span>For version 1.1.18</span>
-    <span>Build 23</span>
-    <span>Updated September 16, 2026</span>
+    <span>For version 1.1.19</span>
+    <span>Build 24</span>
+    <span>Updated October 28, 2026</span>
   </div>
   <div class="hero-actions no-print">
     <a class="button primary" href="../../../downloads/markn-memo-user-guide-en.pdf" download>Download or print the PDF</a>
     <a class="button secondary" href="../markn-memo.html">Back to the app page</a>
   </div>
 </section>
+
+<aside class="manual-note"><h2>What is new in 1.1.19</h2><p>Add to memos by voice, create category memos by voice, and swipe to complete and restore memos. Alarm time guidance and lock activation are improved, along with the recording button and outfits. Existing users receive a one-time scrolling update message.</p></aside>
 
 <nav class="manual-toc" aria-label="User guide contents">
   <h2>Choose what you need</h2>
@@ -222,6 +224,20 @@
     <img src="../../../assets/img/screenshots/markn-memo-categories.png" alt="Category list screen" width="1080" height="2400">
     <figcaption>Category list. Tap a category to read the memos stored inside it.</figcaption>
   </figure>
+  <h3>Add to a memo by voice</h3>
+  <ol class="manual-steps">
+    <li><strong>Open Temporary Memos or a category.</strong><span>Tap the small microphone at the end of the memo text field.</span></li>
+    <li><strong>Speak the text to add.</strong><span>Recognized text is appended on a new line after the existing text. The original text remains.</span></li>
+    <li><strong>Check the result.</strong><span>Correct any mistakes by typing. Canceling voice input leaves the text unchanged.</span></li>
+  </ol>
+  <p>The new memo field opened with + inside a category also has a microphone. Check the recognized text and tap Save to save it in that category. It remains a draft until saved. Voice input availability depends on the device speech service.</p>
+  <h3>Swipe a finished memo to mark it complete</h3>
+  <ol class="manual-steps">
+    <li><strong>Swipe a memo left or right and release.</strong><span>A check mark and faded, crossed-out text appear briefly, then the memo moves to Completed memos. A short swipe does not change it.</span></li>
+    <li><strong>Open Completed memos at the end of the list.</strong><span>Restore beside a memo restores that one item. Restore all at the bottom restores all completed memos in the current category or Temporary Memos list.</span></li>
+    <li><strong>Restore a memo to use it again.</strong><span>Its text and category are preserved. Completion is separate from deletion and completed memos are not automatically deleted. Restore them before editing or deleting.</span></li>
+  </ol>
+  <aside class="manual-warning"><h3>Alarms on completed memos</h3><p>Completing a memo cancels its alarm. Restoring the memo does not restore its alarm automatically; set a new alarm if needed. The square selection checkbox is for organizing and other actions, not completion.</p></aside>
   <h3>Read, edit, and reorder</h3>
   <ul class="manual-list">
     <li>Tap memo text to edit it.</li>
@@ -241,6 +257,7 @@
     <li><strong>Choose a time.</strong><span>Select 5, 10, or 30 minutes, 1 hour, or choose a date and time.</span></li>
     <li><strong>When choosing a date and time, tap OK.</strong><span>No second confirmation is needed.</span></li>
   </ol>
+  <p>The time picker shows both 24-hour time and AM/PM, for example 16:00 (4:00 PM). A past date or time displays a message and keeps the picker open so you can choose a future time.</p>
   <aside class="manual-note"><h3>Check that the alarm is set</h3><p>A confirmation appears immediately after setting an alarm. The memo starts with a clock mark and its text becomes bold blue. The alarm time is not permanently shown in the memo list. To check or change the time, select the memo and tap the clock button. Choose Clear alarm to remove the alarm, its clock mark, and the alarm text color.</p></aside>
   <aside class="manual-warning"><h3>A notification can be late</h3><p>Android power saving and the exact alarm permission can move the notification time. If the app shows instructions, check the permission in Android Settings.</p></aside>
   <aside class="manual-note"><h3>Full-screen display while locked</h3><p>On Android 14 or later, if full-screen alarm display is not allowed, the app explains this after you set an alarm. Use Open settings to allow it in Android Settings. If you do not allow it, the alarm still uses sound, vibration, and a high-priority notification.</p></aside>
@@ -256,10 +273,10 @@
   </figure>
   <div class="manual-card-grid">
     <article class="manual-card"><h3>Language, theme, and background</h3><p>Choose the app language, light or dark theme, background color, and casual or business appearance. In Casual mode, turn on Dress-up mode to let Markun's outfit and home-screen effects change with the seasons.</p></article>
-    <article class="manual-card"><h3>Special outfits and seasonal messages</h3><p>Dress-up mode is off by default. Turn it on for Halloween outfits on October 24–31, Christmas outfits on December 18–25, and New Year outfits on January 1–7 each year. Markun returns to the usual seasonal outfit afterward.</p><p>For New Year, the Japanese app language shows a haori outfit; all other app languages show a shared celebration outfit. Changes follow your device's local date and work offline. Casual-mode messages also change during these periods, even when Dress-up mode is off.</p></article>
+    <article class="manual-card"><h3>Special outfits and seasonal messages</h3><p>Dress-up mode is off by default. Turn it on for Halloween outfits on October 10–31, Christmas outfits on December 4–25, and New Year outfits on January 1–14 each year. Markun returns to the usual seasonal outfit afterward.</p><p>For New Year, the Japanese app language shows a haori outfit; all other app languages show a shared celebration outfit. Changes follow your device's local date and work offline. During voice input, Markun keeps the outfit and presses the chest button. At New Year, the round button shows a greeting and the current year: Japanese greeting and era year for Japanese, or Happy New Year and the calendar year for other languages. Casual-mode messages also change during these periods, even when Dress-up mode is off.</p></article>
     <article class="manual-card"><h3>Messages for the four seasons</h3><p>In Japanese Casual mode, everyday messages change on the same schedule as seasonal outfits: spring (March–May), summer (June–August), autumn (September–November), and winter (December–February). This works offline, even with Dress-up mode off. The same message is shown throughout each day, with another entry selected the next day. Event messages take priority during special dates, then seasonal messages return. Business mode and everyday messages in other languages are unchanged.</p></article>
     <article class="manual-card"><h3>Memo display</h3><p>Show or hide creation dates and change the memo order.</p></article>
-    <article class="manual-card"><h3>App lock</h3><p>Protect settings and memo screens with the device fingerprint, face, PIN, pattern, or password. Home stays available for quick capture.</p></article>
+    <article class="manual-card"><h3>App lock</h3><p>Protect settings and memo screens with the device fingerprint, face, PIN, pattern, or password. Home stays available for quick capture. After you enable the lock and authenticate successfully, the app returns Home and protects settings and memo screens immediately. Restarting is not required.</p></article>
     <article class="manual-card"><h3>Tutorial</h3><p>Open Tutorial to review the short introduction. Choose Try voice input to create a memo by speaking, organize it into a category, and try setting an alarm with the hands-on guide.</p></article>
     <article class="manual-card"><h3>App info</h3><p>See the version, check for updates, open this guide, and read the privacy policy.</p></article>
   </div>
