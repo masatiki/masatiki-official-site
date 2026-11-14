@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Detailed Mark'n Memo instructions, icon meanings, safety notes, and troubleshooting in Japanese.">
-  <meta name="manual-version-name" content="1.1.20">
-  <meta name="manual-version-code" content="25">
-  <meta name="manual-source-sha256" content="40a8b4ed6afe53ea7fb71160cdceeaa43faa7c9f53212dce6c46c49b355b7f30">
+  <meta name="manual-version-name" content="1.1.22">
+  <meta name="manual-version-code" content="27">
+  <meta name="manual-source-sha256" content="9d111cb34dbb9cb94e200ed516d34ce8b602d82cc8991411da882cdd6dfed317">
   <title>Mark'n Memo &#x4F7F;&#x3044;&#x65B9;&#x30FB;&#x8AAC;&#x660E;&#x66F8; | Masatiki</title>
   <link rel="icon" href="../../assets/img/markn-brand-logo.png" type="image/png">
   <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -67,9 +67,9 @@
   <h1 id="manual-title">使い方・説明書</h1>
   <p class="lead">スマートフォンに慣れていない方にも、順番どおりに操作できるよう説明します。</p>
   <div class="manual-meta">
-    <span>対応バージョン 1.1.20</span>
-    <span>ビルド 25</span>
-    <span>更新日 2026&#x5E74;11&#x6708;6&#x65E5;</span>
+    <span>対応バージョン 1.1.22</span>
+    <span>ビルド 27</span>
+    <span>更新日 2026&#x5E74;11&#x6708;14&#x65E5;</span>
   </div>
   <div class="hero-actions no-print">
     <a class="button primary" href="../../downloads/markn-memo-user-guide-ja.pdf" download>PDF版をダウンロード・印刷</a>
@@ -77,7 +77,7 @@
   </div>
 </section>
 
-<aside class="manual-note"><h2>1.1.20の主な変更</h2><p>音声入力した文字をカーソル位置へ挿入できるようになりました。完了したメモは最初から一覧を表示し、見出しで開閉できます。ホームのお知らせには、挨拶に交えて使い方のヒントを追加しました。</p><p>この説明書は1.1.20向けです。Google Playの審査・配信状況によっては、まだ更新できない場合があります。</p></aside>
+<aside class="manual-note"><h2>1.1.22の主な変更</h2><p>カテゴリを開いて戻ったとき、一覧のスクロール位置を保つようになりました。カテゴリの新規作成・名前変更も、入力欄のマイクから声で入力できます。ホームの入力欄は手入力専用のままです。</p><p>動作確認を行う方は、アプリ情報から端末をテスト用に指定できます。通常の利用者は設定を変えずに使えます。アプリの版や入手経路を区別する匿名の計測情報も整えました。</p><p>この説明書は1.1.22向けです。現在は公開準備中で、Google Playから更新できる状態ではありません。</p></aside>
 
 <nav class="manual-toc" aria-label="説明書の目次">
   <h2>知りたいことから選べます</h2>
@@ -234,7 +234,7 @@
   <ol class="manual-steps">
     <li><strong>宝箱・カテゴリの画面を開きます。</strong></li>
     <li><strong>画面上部の「＋」を押します。</strong></li>
-    <li><strong>カテゴリ名を入力して確定します。</strong></li>
+    <li><strong>カテゴリ名を入力して確定します。</strong><span>入力欄のマイクから声でも入力できます。名前を確認してからチェックマークで確定してください。鉛筆から名前を変更するときも同じように使えます。</span></li>
   </ol>
   <aside class="manual-note">
     <h3>ホームへ戻らずに切り替える</h3>
@@ -242,7 +242,7 @@
   </aside>
   <figure class="manual-screenshot">
     <img src="../../assets/img/screenshots/markn-memo-categories.png" alt="カテゴリ一覧画面" width="1080" height="2400">
-    <figcaption>カテゴリ一覧。カテゴリを押すと、その中のメモを読み返せます。</figcaption>
+    <figcaption>カテゴリ一覧。カテゴリを押すと、その中のメモを読み返せます。戻ると直前のスクロール位置へ戻ります。</figcaption>
   </figure>
   <h3>声でメモに追記する</h3>
   <ol class="manual-steps">
@@ -251,6 +251,7 @@
     <li><strong>追加された文字を確認します。</strong><span>間違いは手入力で直せます。音声入力をキャンセルした場合、本文は変わりません。</span></li>
   </ol>
   <p>カテゴリの「＋」で開く新規メモ欄にもマイクがあります。話した内容を確認し、「保存」を押すとそのカテゴリへ保存されます。保存前は下書きです。音声認識の利用可否は端末の音声認識サービスによります。</p>
+  <p>ホームの入力欄は手入力専用です。ホームで声からメモを作るときは、大きなマーくんボタンを使ってください。</p>
   <h3>済んだメモをスワイプで完了にする</h3>
   <ol class="manual-steps">
     <li><strong>メモを左右どちらかへスワイプして指を離します。</strong><span>チェックと薄い文字・取り消し線が表示され、通常の一覧から「完了したメモ」へ移ります。短いスワイプでは変わりません。</span></li>
@@ -306,6 +307,7 @@
     <article class="manual-card"><h3>アプリロック</h3><p>端末の指紋・顔・PINなどを使い、設定やメモ画面を保護できます。ホーム画面はすぐ使えるようロック対象外です。ロックをONにして本人確認が成功するとホームへ戻り、その直後から設定やメモ画面を開く際に認証が必要になります。再起動は不要です。</p></article>
     <article class="manual-card"><h3>チュートリアル</h3><p>「チュートリアル」で最初の短い紹介を見直せます。「音声入力を体験」では、声でメモを作り、カテゴリへの整理・アラーム設定まで実際に操作できます。</p></article>
     <article class="manual-card"><h3>アプリ情報</h3><p>バージョン、更新確認、詳しい説明書、プライバシーポリシーを確認できます。</p></article>
+    <article class="manual-card"><h3>テスト利用の指定</h3><p>動作確認を行う方は、アプリ情報の「利用状況の集計」を開き、「この端末をテスト用として指定する」をONにして保存してください。通常の利用者はOFFのままで使えます。指定は端末ごとに必要で、アプリの入れ直し後は再指定してください。過去の記録にはさかのぼって適用されません。</p><p>テスト指定中もメモやアラームは使えます。利用状況はテストとして区別されますが、すべての記録送信を停止する設定ではありません。メモ本文や録音内容を追加送信する機能ではありません。</p></article>
   </div>
 </section>
 
